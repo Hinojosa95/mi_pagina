@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TyreHouse Ajijic Mx</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
     <header>
@@ -95,6 +96,78 @@
     </div>
     <!-- Agrega más productos aquí -->
   </section>
+  <section class="tipos-llantas">
+  <h2>Tipos de Llantas que Manejamos</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="clima.png" alt="Para Cualquier Tipo de Clima" />
+        <p>Auto</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="deportiva.png" alt="Llanta Deportiva" />
+        <p>DEPORTIVA</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="camion.png" alt="Llanta para Camión" />
+        <p>Camión</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="taquetudas.png" alt="Llantas Taquetudas" />
+        <p>Taquetuda</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="taquete.png" alt="Llantas Off-Road" />
+        <p>Off-Road</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="moto_deportiva.png" alt="Llanta Moto Deportiva" />
+        <p>Moto Deportiva</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="motoneta.png" alt="Llanta para motoneta" />
+        <p>Motoneta</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="moto_taxi.png" alt="Llanta para Mototaxi" />
+        <p>Mototaxi</p>
+      </div>
+      <!-- Agrega más tipos si gustas -->
+    </div>
+    <!-- Flechas -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+<section class="cotizacion">
+  <div class="form-container">
+    <div class="form-texto">
+      <h2>Obtén Tu Cotización Sin Compromiso</h2>
+      <p>Introduce la información de tu neumático en las casillas de búsqueda y en Tyre House Ajijic Mx te la conseguimos.</p>
+    </div>
+    <form action="https://formsubmit.co/hinojosa.95@icloud.com" method="POST" class="formulario-cotizacion">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="text" name="_honey" style="display:none">
+  <div class="fila">
+    <input type="text" name="Ancho" placeholder="ANCHO" required>
+    <input type="text" name="Alto" placeholder="ALTO" required>
+    <input type="text" name="Rin" placeholder="RIN" required>
+  </div>
+  <select name="Vehículo" required>
+    <option value="" disabled selected>VEHÍCULO</option>
+    <option value="Sedán">Sedán</option>
+    <option value="SUV">SUV</option>
+    <option value="Camioneta">Camioneta</option>
+    <option value="Camión">Camión</option>
+    <option value="Agrícola">Agrícola</option>
+    <option value="Otro">Otro</option>
+  </select>
+  <input type="tel" name="Teléfono" placeholder="TELÉFONO" required>
+  <input type="email" name="Correo" placeholder="CORREO ELECTRÓNICO" required>
+  <button type="submit">COTIZAR</button>
+</form>
+  </div>
+</section>
 
   <section class="contacto">
     <h2>Contáctanos</h2>
@@ -107,6 +180,31 @@
   </a>
   
   <footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
     <p>&copy; 2025 Tyre House Ajijic Mx. Todos los derechos reservados.</p>
   </footer>
 </body>

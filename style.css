@@ -71,6 +71,115 @@ body {
   .whatsapp-float img:hover {
     transform: scale(1.1);
   }  
+  .cotizacion {
+  background-color: #0b0000;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.form-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.form-texto h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.formulario-cotizacion {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fila {
+  display: flex;
+  gap: 10px;
+}
+
+.fila input {
+  flex: 1;
+}
+
+input, select {
+  padding: 15px;
+  border: none;
+  background-color: white;
+  color: #100201;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input::placeholder, select {
+  color: #0f0101;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  background-color: #f20707;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000;
+}
+.tipos-llantas {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tipos-llantas h2 {
+  color: #0d0100;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.swiper-slide {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.swiper-slide p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
   
   
   
